@@ -1,0 +1,22 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Account</title>
+</head>
+
+<body>
+<section class="AccountDto">
+    <h3>Счета</h3>
+    <div th:each="el : ${Accounts}" class="editInformation">
+    <div>
+    <p th:text="${el.text}" class="size" name="text" id="text" aria-placeholder="Текст"></p>
+    </div>
+
+        <hr class="hh1">
+        </div>
+</section>
+
+
+</body>
+
+</html>

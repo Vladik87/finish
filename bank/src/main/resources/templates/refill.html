@@ -1,13 +1,10 @@
-
 <!DOCTYPE html>
-
-<html lang="en" dir="ltr">
-
+<html xmlns="http://www.w3.org/1999/xhtml"
+>
 <head>
     <meta charset="UTF-8">
-    <title> Online bank </title>
-    <header>Добро пожаловать!!!</header>
-   <link rel="stylesheet" href="stailes.css">
+    <title>Пополнение карты</title>
+    <link rel="stylesheet" href="../../webapp/resources/style.css">
     <style>
         header {
             background-color: lightskyblue;
@@ -87,11 +84,28 @@
 </head>
 
 <body>
-<meta charset="utf-8">
 <div id="Line">
-    <div id="Line1"><a href="enter">Вход</a></div>
-    <div id="Line2"><a href="registration" >Регистрация</a></div>
-</div>
-</body>
+    <form action="user" method="post">
+        <div>
+            <label for="say">Номер карты</label>
+            <input name="number" id="say">
+        </div>
 
+        <div>
+            <label for="sum">Сумма</label>
+            <input name="sum" id="sum">
+        </div>
+        <div>
+            <label for="pin">Pin</label>
+            <input name="pin" id="pin">
+        </div>
+
+        <div>
+            <button>Go</button>
+        </div>
+    </form>
+
+</div>
+
+</body>
 </html>
